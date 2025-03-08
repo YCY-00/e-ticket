@@ -5,8 +5,15 @@ export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      screens: {
+        scrollSmooth: { raw: '(scroll-behavior: smooth)' },
+      },
       fontFamily: {
         primary: ['Inter', ...defaultTheme.fontFamily.sans],
+      },
+      spacing: {
+        '128': '32rem',
+        '256': '64rem',
       },
       colors: {
         primary: {
